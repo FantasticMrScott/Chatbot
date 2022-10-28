@@ -1,0 +1,19 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "comfy.js": "^1.1.16",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.2.10",
+    "serialport": "^9.2.8",
+    "tmi.js": "^1.8.5"
+  }
+}
