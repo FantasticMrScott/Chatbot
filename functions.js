@@ -1,10 +1,12 @@
 function hexToRgb(hex) {
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? {
-      r: parseInt(result[1], 16),
-      g: parseInt(result[2], 16),
-      b: parseInt(result[3], 16)
-    } : null;
-  }
+  var hex = hex.replace(/[^0-9A-F]/gi, ''); //remove # from hexcode
+  var bigint = parseInt(hex, 16);
+  var r = (bigint >> 16) & 255;
+  var g = (bigint) >> 8 & 255;
+  var b = bigint & 255;
+  var result =  r.toString().padStart(3, '0') + g.toString().padStart(3, '0') + b.toString().padStart(3,'0'); //make sure RGB is in xxx,xxx,xxx format
+  var result = result + encodeURI('@'); // @ symbold alerts the arduino that the string is complete
+  return result;
+}
 
-  export function hexToRgb();
+module.exports = {hexToRgb};
