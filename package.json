@@ -12,8 +12,11 @@
   "dependencies": {
     "comfy.js": "^1.1.16",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "node-fetch": "^3.2.10",
     "serialport": "^9.2.8",
+    "sound-play": "^1.1.0",
+    "spotify-web-api-node": "^5.0.2",
     "tmi.js": "^1.8.5"
   }
 }
