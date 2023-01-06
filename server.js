@@ -28,7 +28,7 @@ function hasNumbers(test) {
 }
 
 ComfyJS.onCheer = ( user, message, bits, flags, extra ) => {
-  port.write(fun.hexToRgb("FFFFFE"));
+  port.write(fun.hexToRgb("#FFFFFE"));
   ComfyJS.Say(user + " just threw " + bits + " bits at Scott! Thanks!");
 }
 
@@ -42,7 +42,7 @@ ComfyJS.onSub = (user, message, subTierInfo, extra) => {
   } else {
     var tier = "prime";
   }
-  port.write(fun.hexToRgb("FFFFFF"));
+  port.write(fun.hexToRgb("#FFFFFF"));
   ComfyJS.Say(user + " just subscribed at tier " + tier );
 }
 
@@ -56,12 +56,12 @@ ComfyJS.onResub = (user, message, streamMonths, cumulativeMonths, subTierInfo, e
   } else {
     var tier = "3";
   }
-  port.write(fun.hexToRgb("FFFFFF"));
+  port.write(fun.hexToRgb("#FFFFFF"));
   ComfyJS.Say(user + " just subscribed at tier " + tier + "! They have been subbed for " + cumulativeMonths + " months!");
 }
 
 ComfyJS.onRaid = (user, viewers, extra) => {
-  port.write(fun.hexToRgb("FFFFFF"));
+  port.write(fun.hexToRgb("#FFFFFF"));
   ComfyJS.Say(user + " just raided with " + viewers + " viewers! Thank you so much for entrusting me with your viewers!");
 }
 
@@ -73,7 +73,7 @@ ComfyJS.onSubGift = (gifterUser, streakMonths, recipientUser, senderCount, subTi
   } else {
     var tier = "3";
   }
-  port.write(fun.hexToRgb("FFFFFF"));
+  port.write(fun.hexToRgb("#FFFFFF"));
   ComfyJS.Say(gifterUser + " just gifted a tier " + tier + " sub to " + recipientUser + "! Be sure to say thanks!");
 }
 

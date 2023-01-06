@@ -5,7 +5,7 @@ function nelu() {
 }
 
 function pika() {
-    sound.play("C:\\Users\\fanta\\Desktop\\Chatbot\\soundFiles\\pika.mp3", 0.5);
+    sound.play("C:\\Users\\fanta\\Desktop\\Chatbot\\soundFiles\\pika.mp3", 0.3);
 }
 
 function raph() {
