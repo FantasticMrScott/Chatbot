@@ -1,3 +1,5 @@
+//arduino reads 9 digits and executes command with "@"
+//RGB format needs to be "xxx xxx xxx @" so padding is necessary for correct color
 function hexToRgb(hex) {
   const r = parseInt(hex.slice(1,3), 16);
   const g = parseInt(hex.slice(3,5), 16);
