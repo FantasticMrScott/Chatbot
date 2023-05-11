@@ -11,7 +11,7 @@ require("./spotifyAuth.js");
 const spot = require('./spotify.js');
 
 
-
+//Work in progress
 const port = new SerialPort("COM3", {baudRate: 9600});
 
 const parser = new Readline();
